@@ -23,8 +23,8 @@ class PageCacheMiddleware
         CacheItemPoolInterface $cacheItemPool,
         callable $renameKeyFilter = null,
         $ttl = 0
-    )
-    {
+    ) {
+
         $this->cacheItemPool = $cacheItemPool;
         $this->setRenameKeyFilter($renameKeyFilter);
         $this->setTtl($ttl);

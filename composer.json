@@ -9,6 +9,7 @@
     }
   ],
   "require": {
+    "php": "^5.4 || ^7.0",
     "psr/http-message": "^1.0",
     "psr/cache": "^1.0"
   },
@@ -31,5 +32,12 @@
     "psr-4": {
       "ZendTest\\Psr7Middleware\\": "test/"
     }
-  }
+  },
+  "keywords": [
+    "middleware",
+    "page",
+    "cache",
+    "psr7",
+    "zfegg"
+  ]
 }

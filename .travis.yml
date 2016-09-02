@@ -29,4 +29,4 @@ script:
   - if [[ $CS_CHECK == 'true' ]]; then ./vendor/bin/phpcs ; fi
 
 after_script:
-  - if [[ $EXECUTE_TEST_COVERALLS == 'true' ]]; then ./vendor/bin/coveralls -v --coverage_clover=clover.xml ; fi
+  - if [[ $EXECUTE_TEST_COVERALLS == 'true' ]]; then mkdir -p build/logs && ./vendor/bin/coveralls -v --coverage_clover=clover.xml ; fi
